@@ -44,7 +44,7 @@
     <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark  px-5 py-3 py-lg-0" style="background-color: #091E3E">
-            <a href="index.html" class="navbar-brand p-0">
+            <a href="{{ url('/') }}" class="navbar-brand p-0">
                 <h1 class="m-0">Nuriba Academy</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -130,238 +130,163 @@
                             </div>
                         </div>
                         <div class="col-lg-5">
-                            <img src="{{asset('img/user.jpg')}}" alt="jpg" width="400px" height="500px">
+                            <img src="{{asset('img/kurslar.jpg')}}" alt="jpg" width="350px" height="500px">
                         </div>
                     </div>
                 </div>
             </div>
             
     <!-- Pricing Plan Start -->
+     <!-- Pricing Plan Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mt-4 mb-5 mx-auto" style="max-width: 600px;">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Online kurslar</h5>
                 <h1 class="mb-0">"SIFAT VA NATIJA" kursi</h1>
             </div>
             <div class="row g-0">
-                <div class="col-lg-4 col-md-4 col-sm-12 wow" data-wow-delay="0.6s">
+                <div class="col-lg-4 col-md-4 col-sm-12 wow slideInUp" data-wow-delay="0.6s">
                     <div class="bg-light rounded">
                         <div class="border-bottom py-4 px-5 mb-4">
                             <h3 class="text-primary mb-1">Boshlang'ich tarifi</h3>
                         </div>
-                        <div class="p-5 pt-0" style="height:550px">
+                        <div class="p-5 pt-0" style="height:80vh">
                             <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 26px; line-height: 45px;">390 000
-                                    SO'M</small>
+                                <small class="align-top" style="font-size: 26px; line-height: 45px;">390 000 SO'M</small>
                                 <br>
-                                <small class="align-top text-decoration-line-through"
-                                    style="font-size: 22px; line-height: 45px;">750 000 SO'M</small>
+                                <small class="align-top text-decoration-line-through" style="font-size: 22px; line-height: 45px;">750 000 SO'M</small>
                             </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>8 TA DARS</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>DARSLARGA 1 OY DOSTUP</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>KURATOR NAZORATI</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>SERTIFIKAT</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>UMUMIY CHAT</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="https://t.me/Mukhlisichka" style="position: relative; top:140px"
-                                class="btn btn-primary py-2 px-4 mt-4">Kursni xarid qilish</a>
+                            <div class="d-flex justify-content-between mb-3"><b>8 TA DARS</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>DARSLARGA 1 OY DOSTUP</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>KURATOR NAZORATI</b><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><b>SERTIFIKAT</b><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><b>UMUMIY CHAT</b><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2 mt-4">
+                                <a href="https://t.me/Mukhlisichka"  class="btn btn-primary py-2 px-4">Kursni xarid qilish</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 wow " data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-4 col-sm-12 wow slideInUp" data-wow-delay="0.3s">
                     <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
                         <div class="border-bottom py-4 px-5 mb-4">
-                            <h3 class="text-primary mb-1">MUTAXASIS TARIFI</h3>
+                            <h3 class="text-primary mb-1">MUTAXASSIS TARIFI</h3>
                         </div>
-                        <div class="p-5 pt-0" style="height:550px">
+                        <div class="p-5 pt-0" style="height:80vh">
                             <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 26px; line-height: 45px;">490 000
-                                    SO'M</small>
+                                <small class="align-top" style="font-size: 26px; line-height: 45px;">490 000 SO'M</small>
                                 <br>
-                                <small class="align-top text-decoration-line-through"
-                                    style="font-size: 22px; line-height: 45px;">1000 000 SO'M</small>
+                                <small class="align-top text-decoration-line-through" style="font-size: 22px; line-height: 45px;">1000 000 SO'M</small>
                             </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>8 TA DARS</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>UMUMIY CHAT</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>SERTIFIKAT</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>DARSLARGA DOSTUP 2 OY</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>KURS BITIRUV MAROSIMIDA ISHTIROK
-                                    ETISH HUQUQI</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>DILOROM QARSHIBOYEVA BILAN
-                                    KO'RISHIB, SUHBAT QILISH IMKONIYATI</span><i
-                                    class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="https://t.me/Mukhlisichka" style="position: relative; top:20px"
-                                class="btn btn-primary py-2 px-4 mt-4">Kursni xarid qilish</a>
+                            <div class="d-flex justify-content-between mb-3"><b>8 TA DARS</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>UMUMIY CHAT</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>SERTIFIKAT</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>DARSLARGA DOSTUP 2 OY</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>KURS BITIRUV MAROSIMIDA ISHTIROK ETISH HUQUQI</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><b>DILOROM QARSHIBOYEVA BILAN KO'RISHIB, SUHBAT QILISH IMKONIYATI</b><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2 mt-4">
+                                <a href="https://t.me/Mukhlisichka"  class="btn btn-primary py-2 px-4">Kursni xarid qilish</a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 wow" data-wow-delay="0.9s">
+                <div class="col-lg-4 col-md-4 col-sm-12 wow slideInUp" data-wow-delay="0.9s">
                     <div class="bg-light rounded">
                         <div class="border-bottom py-4 px-5 mb-4">
                             <h3 class="text-primary mb-1">EKSPERT TARIFI</h3>
                         </div>
-                        <div class="p-5 pt-0" style="height:550px">
+                        <div class="p-5 pt-0" style="height:80vh;">
                             <h1 class="display-5 mb-3">
-                                <small class="align-top" style="font-size: 26px; line-height: 45px;">790 000
-                                    SO'M</small>
+                                <small class="align-top" style="font-size: 26px; line-height: 45px;">790 000 SO'M</small>
                                 <br>
-                                <small class="align-top text-decoration-line-through"
-                                    style="font-size: 22px; line-height: 45px;">1500 000 SO'M</small>
+                                <small class="align-top text-decoration-line-through" style="font-size: 22px; line-height: 45px;">1500 000 SO'M</small>
                             </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>8 TA DARS</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>UMUMIY CHAT</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>DARSLARGA CHEKSIZ DOSTUP</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>SERTIFIKAT</span><i
-                                    class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>KURS BITIRUV MAROSIMIDA ISHTIROK
-                                    ETISH HUQUQI</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="https://t.me/Mukhlisichka" style="position: relative; top:110px"
-                                class="btn btn-primary py-2 px-4 mt-4">Kursni xarid qilish</a>
+                            <div class="d-flex justify-content-between mb-3"><b>8 TA DARS</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>UMUMIY CHAT</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>DARSLARGA CHEKSIZ DOSTUP</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>SERTIFIKAT</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><b>KURS BITIRUV MAROSIMIDA ISHTIROK ETISH HUQUQI</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2 mt-4">
+                                <a href="https://t.me/Mukhlisichka"  class="btn btn-primary py-2 px-4">Kursni xarid qilish</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h2 class="mt-4 mb-3">“Sifat va natija” notiqlik kursi davomiyligi 1 oy, haftada 2 kun shanba va
-                    yakshanba kunlari 1 soatdan bo’lib o’tadi.</h2>
             </div>
         </div>
     </div>
+    <!-- Pricing Plan End -->
 
     <!-- Pricing Plan End -->
 
     <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
         <h3 class="fw-bold text-primary text-uppercase">Kursda o’tiladigan dars mavzulari:</h3>
     </div>
-    <div class="div">
-        <div class="container-xxl row">
-            <div class="blok col-md-6">
-                <div class="bordered">
-                    <h5 class="card-title text-center">1-blok</h5>
-                    {{-- <p class="card-text">1-So’zlarni erkin talaffuz qilishdagi muammolardan xalos bo’lish;</p> --}}
-                    <ol>
-                        <li>
-                            So’zlarni erkin talaffuz qilishdagi muammolardan xalos bo’lish;
-                        </li>
-                        <li>
-                            Ovoz tembrini yaxshilashga oid mashqlar;
-                        </li>
-                        <li>
-                            Intonatsiyani yaxshilash;
-                        </li>
-                        <li>
-                            Dinamikani ushlash orqali yoqimli va ta'sirli ovozga ega bo'lish.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div class="blok col-md-6">
-                <div class="bordered">
-                    <h5 class="card-title text-center">2-blok</h5>
-                    {{-- <p class="card-text">1-So’zlarni erkin talaffuz qilishdagi muammolardan xalos bo’lish;</p> --}}
-                    <ol>
-                        <li>
-                            Chiroyli muomala va munosabatlarga kirishish.
-                        </li>
-                        <li>
-                            Insonlarga ochilish va erkin muloqot qilish.
-                        </li>
-                        <li>
-                            Odamlarni monipulyatsiya qilish usullari.
-                        </li>
-                        <li>
-                            O'zimizga bo'lgan ishonchni oshirishga oid vazifalar.
-                        </li>
-                    </ol>
-                </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bordered">
+                <h5 class="card-title text-center">1-blok</h5>
+                <ol>
+                    <li>So’zlarni erkin talaffuz qilishdagi muammolardan xalos bo’lish</li>
+                    <li>Ovoz tembrini yaxshilashga oid mashqlar</li>
+                    <li>Intonatsiyani yaxshilash</li>
+                    <li>Dinamikani ushlash orqali yoqimli va ta'sirli ovozga ega bo'lish</li>
+                </ol>
             </div>
         </div>
-        <div class="container-xxl row">
-            <div class="blok col-md-6">
-                <div class="bordered">
-                    <h5 class="card-title text-center">3-blok</h5>
-                    {{-- <p class="card-text">1-So’zlarni erkin talaffuz qilishdagi muammolardan xalos bo’lish;</p> --}}
-                    <ol>
-                        <li>
-                            Kuchli hayajon va qo'rquvdan xalos bo'lish.
-                        </li>
-                        <li>
-                            Nutq orgali insonlarning ishonchini qozonish sirlari.
-                        </li>
-                        <li>
-                            Xotira mashqlari.
-                        </li>
-                        <li>
-                            Improvizatsiyani rivolantirish usullari: (Amaliy mashg'ulotlar).
-                        </li>
-                    </ol>
-                </div>
-
-            </div>
-            <div class="blok col-md-6">
-                <div class="bordered">
-                    <h5 class="card-title text-center">4-blok</h5>
-                    {{-- <p class="card-text">1-So’zlarni erkin talaffuz qilishdagi muammolardan xalos bo’lish;</p> --}}
-                    <ol>
-                        <li>
-                            Kamera bilan ishlash.
-                        </li>
-                        <li>
-                            Sahna nutqini shakllantirish va rivolantirish.
-                        </li>
-                        <li>
-                            So'zga chiqqanda o'zini o'nglab olish sirlari.
-                        </li>
-                        <li>
-                            Auditoriyaning diqqat e'tiborini
-                            tortish va uni uzoq muddatga
-                            saqlab qolish
-                        </li>
-                    </ol>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="container-xxl row">
-            <div class="blok col-md-12">
-                <div class="bordered">
-                    <h5 class="card-title text-center">5-blok</h5>
-                    {{-- <p class="card-text">1-So’zlarni erkin talaffuz qilishdagi muammolardan xalos bo’lish;</p> --}}
-                    <div class="container d-flex justify-content-center">
-                        <ol>
-                        <li>
-                            Omma oldiga chiqishdan avval
-                            ko'riladigan tayyorgarlik.
-                        </li>
-                        <li>
-                            Katta va kichik auditoriyada nutq
-                            so'zlash usullari.
-                        </li>
-                        <li>
-                            estlar, nigoh va tana harakatlari
-                            uchun mashqlar.
-                        </li>
-                        <li>
-                            Korparativ nutqni shakllantirish va
-                            rivojlantirish
-                        </li>
-                    </ol>
-                    </div>
-                    
-                </div>
+        <div class="col-md-6">
+            <div class="bordered">
+                <h5 class="card-title text-center">2-blok</h5>
+                <ol>
+                    <li>Chiroyli muomala va munosabatlarga kirishish</li>
+                    <li>Insonlarga ochilish va erkin muloqot qilish</li>
+                    <li>Odamlarni manipulyatsiya qilish usullari</li>
+                    <li>O'zimizga bo'lgan ishonchni oshirishga oid vazifalar</li>
+                </ol>
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bordered">
+                <h5 class="card-title text-center">3-blok</h5>
+                <ol>
+                    <li>Kuchli hayajon va qo'rquvdan xalos bo'lish</li>
+                    <li>Nutq orgali insonlarning ishonchini qozonish sirlari</li>
+                    <li>Xotira mashqlari</li>
+                    <li>Improvizatsiyani rivolantirish usullari: (Amaliy mashg'ulotlar)</li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="bordered">
+                <h5 class="card-title text-center">4-blok</h5>
+                <ol>
+                    <li>Kamera bilan ishlash</li>
+                    <li>Sahna nutqini shakllantirish va rivolantirish</li>
+                    <li>So'zga chiqqanda o'zini o'nglab olish sirlari</li>
+                    <li>Auditoriyaning diqqat e'tiborini tortish va uni uzoq muddatga saqlab qolish</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bordered ">
+                <h5 class="card-title text-center">5-blok</h5>
+                <ol>
+                    <li>Omma oldiga chiqishdan avval ko'riladigan tayyorgarlik</li>
+                    <li>Katta va kichik auditoriyada nutq so'zlash usullari</li>
+                    <li>Estlar, nigoh va tana harakatlari uchun mashqlar</li>
+                    <li>Korparativ nutqni shakllantirish va rivojlantirish</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
     <div class="container-fluid bg-dark text-light mt-5" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">

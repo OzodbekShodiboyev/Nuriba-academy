@@ -17,7 +17,7 @@ class TelegramController extends Controller
         $telefon = $request->input('telefon');
         $telegram->sendMessage([
             'chat_id' => $chatId,
-            'text' => "ISM: $name\nTELEFON: $telefon\nXABAR:$message"
+            'text' => "‼️YANGI MUROJAAT‼️\n\n👤 ISM: : $name\n\n📞 TELEFON RAQAMI: $telefon\n\n✍️ XABAR:$message"
         ]);
 
         // Optionally, you can redirect back to the form after sending the message

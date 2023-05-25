@@ -106,7 +106,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Bosh sahifa</a>
+                    <a href="{{url('/')}}" class="nav-item nav-link active">Bosh sahifa</a>
                     <a href="#about" class="nav-item nav-link">Men haqimda</a>
                     <a href="{{url('/kurslar')}}" class="nav-item nav-link">Kurslar</a>
                     <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-item nav-link">Bog'lanish</a>
@@ -123,7 +123,7 @@
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Notiqlik bo'yicha ekspert</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Dilorom Qarshiboyeva</h1>
                             <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Men haqimda</a>
-                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Bog'lanish</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Bog'lanish</a>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Notiqlik bo'yicha ekspert</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Dilorom Qarshiboyeva</h1>
                             <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Men haqimda</a>
-                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Bog'lanish</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Bog'lanish</a>
                         </div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                             </a>
                         </div>
                     </div>
-                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Savol va takliflarni yo'llang</a>
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal"class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Savol va takliflarni yo'llang</a>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
@@ -261,39 +261,44 @@
                         <div class="border-bottom py-4 px-5 mb-4">
                             <h3 class="text-primary mb-1">Boshlang'ich tarifi</h3>
                         </div>
-                        <div class="p-5 pt-0" style="height:550px">
+                        <div class="p-5 pt-0" style="height:80vh">
                             <h1 class="display-5 mb-3">
                                 <small class="align-top" style="font-size: 26px; line-height: 45px;">390 000 SO'M</small>
                                 <br>
                                 <small class="align-top text-decoration-line-through" style="font-size: 22px; line-height: 45px;">750 000 SO'M</small>
                             </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>8 TA DARS</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>DARSLARGA 1 OY DOSTUP</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>KURATOR NAZORATI</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>SERTIFIKAT</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>UMUMIY CHAT</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="https://t.me/Mukhlisichka" style="position: relative; top:140px" class="btn btn-primary py-2 px-4 mt-4">Kursni xarid qilish</a>
+                            <div class="d-flex justify-content-between mb-3"><b>8 TA DARS</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>DARSLARGA 1 OY DOSTUP</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>KURATOR NAZORATI</b><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><b>SERTIFIKAT</b><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><b>UMUMIY CHAT</b><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2 mt-4">
+                                <a href="https://t.me/Mukhlisichka"  class="btn btn-primary py-2 px-4">Kursni xarid qilish</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 wow slideInUp" data-wow-delay="0.3s">
                     <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
                         <div class="border-bottom py-4 px-5 mb-4">
-                            <h3 class="text-primary mb-1">MUTAXASIS TARIFI</h3>
+                            <h3 class="text-primary mb-1">MUTAXASSIS TARIFI</h3>
                         </div>
-                        <div class="p-5 pt-0" style="height:550px">
+                        <div class="p-5 pt-0" style="height:80vh">
                             <h1 class="display-5 mb-3">
                                 <small class="align-top" style="font-size: 26px; line-height: 45px;">490 000 SO'M</small>
                                 <br>
                                 <small class="align-top text-decoration-line-through" style="font-size: 22px; line-height: 45px;">1000 000 SO'M</small>
                             </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>8 TA DARS</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>UMUMIY CHAT</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>SERTIFIKAT</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>DARSLARGA DOSTUP 2 OY</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>KURS BITIRUV MAROSIMIDA ISHTIROK ETISH HUQUQI</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>DILOROM QARSHIBOYEVA BILAN KO'RISHIB, SUHBAT QILISH IMKONIYATI</span><i class="fa fa-times text-danger pt-1"></i></div>
-                            <a href="https://t.me/Mukhlisichka" style="position: relative; top:20px" class="btn btn-primary py-2 px-4 mt-4">Kursni xarid qilish</a>
+                            <div class="d-flex justify-content-between mb-3"><b>8 TA DARS</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>UMUMIY CHAT</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>SERTIFIKAT</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>DARSLARGA DOSTUP 2 OY</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>KURS BITIRUV MAROSIMIDA ISHTIROK ETISH HUQUQI</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><b>DILOROM QARSHIBOYEVA BILAN KO'RISHIB, SUHBAT QILISH IMKONIYATI</b><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2 mt-4">
+                                <a href="https://t.me/Mukhlisichka"  class="btn btn-primary py-2 px-4">Kursni xarid qilish</a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -302,18 +307,20 @@
                         <div class="border-bottom py-4 px-5 mb-4">
                             <h3 class="text-primary mb-1">EKSPERT TARIFI</h3>
                         </div>
-                        <div class="p-5 pt-0" style="height:550px">
+                        <div class="p-5 pt-0" style="height:80vh;">
                             <h1 class="display-5 mb-3">
                                 <small class="align-top" style="font-size: 26px; line-height: 45px;">790 000 SO'M</small>
                                 <br>
                                 <small class="align-top text-decoration-line-through" style="font-size: 22px; line-height: 45px;">1500 000 SO'M</small>
                             </h1>
-                            <div class="d-flex justify-content-between mb-3"><span>8 TA DARS</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>UMUMIY CHAT</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>DARSLARGA CHEKSIZ DOSTUP</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-3"><span>SERTIFIKAT</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <div class="d-flex justify-content-between mb-2"><span>KURS BITIRUV MAROSIMIDA ISHTIROK ETISH HUQUQI</span><i class="fa fa-check text-primary pt-1"></i></div>
-                            <a href="https://t.me/Mukhlisichka" style="position: relative; top:110px" class="btn btn-primary py-2 px-4 mt-4">Kursni xarid qilish</a>
+                            <div class="d-flex justify-content-between mb-3"><b>8 TA DARS</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>UMUMIY CHAT</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>DARSLARGA CHEKSIZ DOSTUP</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><b>SERTIFIKAT</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><b>KURS BITIRUV MAROSIMIDA ISHTIROK ETISH HUQUQI</b><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2 mt-4">
+                                <a href="https://t.me/Mukhlisichka"  class="btn btn-primary py-2 px-4">Kursni xarid qilish</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -375,7 +382,31 @@
                         <div class="text-center py-4" style="height:220px">
                             <h4 class="text-primary">Habibulla Yusuphodjayev</h4>
                             <h5>Tadbirkor</h5>
-                            <p class="text-uppercase m-0">"MELEROS" yumshoq mebel, oshxona mebellari, eshiklar, darvozalar ishlab chiqaruvchi kompaniya asoschisi va rahbari</p>
+                            <p class="text-uppercase m-0">"MELORES" yumshoq mebel, oshxona mebellari, eshiklar, darvozalar ishlab chiqaruvchi kompaniya asoschisi va rahbari</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class=" w-100" src="img/dilya.jpg" alt="" height="400px">
+                        </div>
+                        <div class="text-center py-4" style="height:220px">
+                            <h4 class="text-primary">Dilya Asliddinova </h4>
+                            <h5>Dietolog</h5>
+                            <p class="text-uppercase m-0">"Nafis qomat" brendi asoschisi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class=" w-100" src="img/sevara.jpg" alt="" height="400px">
+                        </div>
+                        <div class="text-center py-4" style="height:220px">
+                            <h4 class="text-primary">Sevara Muhammedova  </h4>
+                            <h5>Buxgalter</h5>
+                            <p class="text-uppercase m-0">Futbol federatsiyasi bosh buxgalteri va "Finway" buxgalteriya akademiyasi asoschisi</p>
                         </div>
                     </div>
                 </div>
